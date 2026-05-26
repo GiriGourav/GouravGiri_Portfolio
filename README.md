@@ -1,130 +1,122 @@
-# 🎨 Piyush Pandey - Portfolio Website
+# Gourav Giri - Portfolio Website
 
-A modern, responsive portfolio website built with React, Vite, and Framer Motion. Features smooth animations, dark/light theme toggle, and a clean, professional design.
+A modern, responsive portfolio website for Gourav Giri, a final year Computer Science student at ABES Engineering College focused on Java, Spring Boot, microservices, and backend engineering.
 
-## ✨ Features
+The portfolio highlights my technical skills, resume projects, achievements, and contact links in a clean React/Vite interface with smooth animations and dark/light theme support.
 
-- 🌓 **Dark/Light Theme Toggle** - Seamless theme switching with localStorage persistence
-- ✨ **Smooth Animations** - Framer Motion animations throughout the site
-- 📱 **Fully Responsive** - Optimized for all screen sizes (mobile, tablet, desktop)
-- 🚀 **Fast Performance** - Built with Vite for lightning-fast load times
-- 🎯 **Modern UI/UX** - Clean design with gradient accents and glassmorphism effects
-- 📊 **Interactive Components** - Hover effects, progress bars, and dynamic typing animation
+## Features
 
-## 🛠️ Technologies Used
+- Dark/light theme toggle with saved preference
+- Responsive layout for desktop, tablet, and mobile
+- Animated sections using Framer Motion
+- Dynamic hero typing animation with Typed.js
+- Resume download button
+- Project cards for backend and automation work
+- Contact cards for email, GitHub, LinkedIn, and LeetCode
 
-- **React 18** - Component-based UI library
-- **Vite** - Next-generation frontend tooling
-- **Framer Motion** - Production-ready motion library
-- **React Icons** - Popular icon library
-- **Typed.js** - Typing animation effect
-- **CSS Variables** - Dynamic theming system
+## Tech Stack
 
-## 📂 Project Structure
+- React
+- Vite
+- Framer Motion
+- React Icons
+- Typed.js
+- CSS variables for theme styling
 
-```
-portfolio-react/
-├── public/
-│   └── assets/          # Images, PDFs, and other static files
-├── src/
-│   ├── components/      # Reusable React components
-│   │   ├── Navbar.jsx
-│   │   ├── Hero.jsx
-│   │   ├── About.jsx
-│   │   ├── Skills.jsx
-│   │   ├── Projects.jsx
-│   │   ├── Contact.jsx
-│   │   └── Footer.jsx
-│   ├── context/         # React Context (Theme)
-│   ├── App.jsx          # Main App component
-│   ├── App.css          # Global styles
-│   ├── index.css        # CSS variables and reset
-│   └── main.jsx         # Entry point
-└── package.json
-```
+## Portfolio Sections
 
-## 🚀 Getting Started
+1. Hero - backend-focused introduction and resume download
+2. About - education, backend interests, DSA achievements, and open-source work
+3. Skills - Java, Spring Boot, REST APIs, JWT, MySQL, Kafka, RabbitMQ, Docker, Kubernetes, Maven, Postman, DSA, HTML, CSS, and Thymeleaf
+4. Projects - key projects from my resume and GitHub
+5. Contact - email and coding profile links
+6. Footer - navigation and copyright
+
+## Featured Projects
+
+- Smart AI-Based Quiz Generator  
+  Microservices quiz platform with JWT authentication, API Gateway, Spring AI, Kafka, RabbitMQ, Docker, and Kubernetes basics.
+
+- IRCTC Backend System  
+  Spring Boot backend for booking, cancellation, payment, and admin workflows with MySQL and transaction management.
+
+- Smart Result Management System  
+  Role-based result management system using Spring Boot, Thymeleaf, and MySQL.
+
+- Amazon Selenium Automation Project  
+  Selenium automation project built with Java, Maven, and TestNG for browser workflow validation.
+
+## Getting Started
 
 ### Prerequisites
 
-- Node.js (v14 or higher)
-- npm or yarn
+- Node.js
+- npm
 
 ### Installation
 
-1. Clone the repository
 ```bash
-git clone https://github.com/piyushpandey955/Portfolio_website_.git
-cd Portfolio_website_/portfolio-react
-```
-
-2. Install dependencies
-```bash
+git clone https://github.com/GiriGourav/GouravGiri_Portfolio.git
+cd GouravGiri_Portfolio
 npm install
 ```
 
-3. Start the development server
+### Run Locally
+
 ```bash
 npm run dev
 ```
 
-4. Open your browser and visit `http://localhost:5173`
+Open the local URL shown in the terminal, usually:
 
-### Build for Production
+```bash
+http://localhost:5173
+```
+
+### Build
 
 ```bash
 npm run build
 ```
 
-The optimized build will be in the `dist` folder.
-
-### Preview Production Build
+### Lint
 
 ```bash
-npm run preview
+npm run lint
 ```
 
-## 📱 Sections
+## Project Structure
 
-1. **Hero** - Landing section with dynamic typing animation
-2. **About** - Introduction and educational background
-3. **Skills** - Technical and professional skills with visual indicators
-4. **Projects** - Portfolio of completed projects
-5. **Contact** - Multiple ways to get in touch
-6. **Footer** - Navigation links and copyright
-
-## 🎨 Customization
-
-### Theme Colors
-
-Edit the CSS variables in `src/index.css`:
-
-```css
-:root[data-theme='dark'] {
-  --primary-color: #8a2be2;
-  --gradient: linear-gradient(135deg, #8a2be2, #4b0082);
-  /* ... more variables */
-}
+```text
+GouravGiri_Portfolio/
+├── public/
+│   └── assets/
+├── src/
+│   ├── components/
+│   │   ├── About.jsx
+│   │   ├── Contact.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Hero.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── Projects.jsx
+│   │   └── Skills.jsx
+│   ├── context/
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── package.json
+└── vite.config.js
 ```
 
-### Content
+## Contact
 
-- Update personal information in component files
-- Add/remove projects in `src/components/Projects.jsx`
-- Modify skills in `src/components/Skills.jsx`
-- Change contact links in `src/components/Contact.jsx`
+- Email: [gouravgiri.dev@gmail.com](mailto:gouravgiri.dev@gmail.com)
+- GitHub: [GiriGourav](https://github.com/GiriGourav)
+- LinkedIn: [gourav-giri](https://www.linkedin.com/in/gourav-giri/)
+- LeetCode: [Coding_Gourav](https://leetcode.com/u/Coding_Gourav/)
 
-## 📄 License
+## Author
 
-This project is open source and available under the [MIT License](LICENSE).
-
-## 👨‍💻 Author
-
-**Piyush Pandey**
-- GitHub: [@piyushpandey955](https://github.com/piyushpandey955)
-- LinkedIn: [Piyush Kumar Pandey](https://www.linkedin.com/in/piyush-kumar-pandey-897ba4299/)
-- Email: piyush7838732397@gmail.com
-
----
-
-Made with ❤️ using React & Framer Motion
+**Gourav Giri**  
+Final Year CS Student @ ABES Engineering College  
+Java & Spring Boot Backend Developer
