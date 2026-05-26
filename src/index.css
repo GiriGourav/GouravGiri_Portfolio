@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Theme Variables */
+:root[data-theme='dark'] {
+  --bg-color: #0a0a1f;
+  --section-bg: #0f0f2a;
+  --card-bg: #151532;
+  --nav-bg: rgba(21, 21, 50, 0.8);
+  --nav-bg-scrolled: rgba(21, 21, 50, 0.95);
+  --text-color: #ffffff;
+  --text-secondary: #b8b8d4;
+  --primary-color: #8a2be2;
+  --secondary-color: #9370db;
+  --border-color: rgba(138, 43, 226, 0.2);
+  --hover-bg: rgba(138, 43, 226, 0.1);
+  --gradient: linear-gradient(135deg, #8a2be2, #4b0082);
+  --secondary-gradient: linear-gradient(135deg, #ff6b6b, #ee5a6f);
+}
+
+:root[data-theme='light'] {
+  --bg-color: #ffffff;
+  --section-bg: #f8f9fa;
+  --card-bg: #ffffff;
+  --nav-bg: rgba(255, 255, 255, 0.8);
+  --nav-bg-scrolled: rgba(255, 255, 255, 0.95);
+  --text-color: #1a1a2e;
+  --text-secondary: #4a4a6a;
+  --primary-color: #8a2be2;
+  --secondary-color: #9370db;
+  --border-color: rgba(138, 43, 226, 0.15);
+  --hover-bg: rgba(138, 43, 226, 0.05);
+  --gradient: linear-gradient(135deg, #8a2be2, #4b0082);
+  --secondary-gradient: linear-gradient(135deg, #ff6b6b, #ee5a6f);
+}
+
+body {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Remove default button styles */
+button {
+  background: none;
+  border: none;
+  outline: none;
+  font-family: inherit;
+}
