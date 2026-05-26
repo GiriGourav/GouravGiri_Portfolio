@@ -7,6 +7,7 @@ import './About.css';
 const About = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
+  const assetPath = (path) => `${import.meta.env.BASE_URL}${path}`;
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -53,7 +54,7 @@ const About = () => {
         >
           <Motion.div variants={itemVariants} className="about-image">
             <div className="image-container">
-              <img src="/assets/About me.jpeg" alt="About me" />
+              <img src={assetPath('assets/About me.jpeg')} alt="About me" />
               <div className="image-overlay"></div>
             </div>
           </Motion.div>
@@ -75,7 +76,7 @@ const About = () => {
                 </div>
                 <h3>Resume</h3>
                 <p className="card-label">Download My CV</p>
-                <a href="/assets/Resume%20Gourav%20Giri.pdf" download>
+                <a href={assetPath('assets/Resume%20Gourav%20Giri.pdf')} download>
                   <button className="download-btn">Download</button>
                 </a>
               </div>

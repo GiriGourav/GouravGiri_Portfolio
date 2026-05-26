@@ -7,6 +7,7 @@ import './Hero.css';
 
 const Hero = () => {
   const typedRef = useRef(null);
+  const assetPath = (path) => `${import.meta.env.BASE_URL}${path}`;
 
   useEffect(() => {
     const typed = new Typed(typedRef.current, {
@@ -100,7 +101,7 @@ const Hero = () => {
             <a href="#contact" className="btn btn-primary">
               Get In Touch
             </a>
-            <a href="/assets/Resume%20Gourav%20Giri.pdf" download className="btn btn-secondary">
+            <a href={assetPath('assets/Resume%20Gourav%20Giri.pdf')} download className="btn btn-secondary">
               Download CV
             </a>
           </Motion.div>
@@ -134,7 +135,7 @@ const Hero = () => {
             whileHover={{ scale: 1.05 }}
             transition={{ type: 'spring', stiffness: 300 }}
           >
-            <img src="/assets/bg.png" alt="Gourav" />
+            <img src={assetPath('assets/bg.png')} alt="Gourav" />
             <div className="image-glow"></div>
           </Motion.div>
         </Motion.div>

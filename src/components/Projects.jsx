@@ -7,33 +7,34 @@ import './Projects.css';
 const Projects = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
+  const assetPath = (path) => `${import.meta.env.BASE_URL}${path}`;
 
   const projects = [
     {
       title: 'Smart AI-Based Quiz Generator',
       description: 'Scalable microservices quiz platform with JWT authentication, API Gateway, Spring AI quiz generation, Kafka and RabbitMQ messaging, Docker, and Kubernetes deployment basics.',
-      image: '/assets/docs.png',
+      image: assetPath('assets/docs.png'),
       github: 'https://github.com/GiriGourav/Smart-AI-Based-Quiz-Generator',
       tags: ['Java', 'Spring Boot', 'Microservices', 'Spring AI', 'Kafka', 'RabbitMQ', 'Docker', 'Kubernetes']
     },
     {
       title: 'IRCTC Backend System',
       description: 'IRCTC-like backend supporting booking, cancellation, payment, and admin workflows with 20+ REST APIs, JWT authentication, optimized MySQL queries, and transaction management.',
-      image: '/assets/project-4.png',
+      image: assetPath('assets/project-4.png'),
       github: 'https://github.com/GiriGourav',
       tags: ['Java', 'Spring Boot', 'MySQL', 'REST APIs', 'JWT', 'Transactions']
     },
     {
       title: 'Smart Result Management System',
       description: 'Role-based result management system for 2000+ student records, automated result generation, responsive Thymeleaf UI, and MySQL-backed data retrieval.',
-      image: '/assets/project-3.png',
+      image: assetPath('assets/project-3.png'),
       github: 'https://github.com/GiriGourav',
       tags: ['Java', 'Spring Boot', 'Thymeleaf', 'MySQL', 'RBAC']
     },
     {
       title: 'Amazon Selenium Automation Project',
       description: 'End-to-end Selenium automation project for Amazon workflows, built with Java, Maven, and TestNG to validate core browser interactions and regression scenarios.',
-      image: '/assets/project-2.png',
+      image: assetPath('assets/project-2.png'),
       github: 'https://github.com/GiriGourav/Amazon-Selenium-Automation-Project',
       tags: ['Java', 'Selenium', 'TestNG', 'Maven', 'Automation Testing']
     },
