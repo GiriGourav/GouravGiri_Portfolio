@@ -21,14 +21,14 @@ const Projects = () => {
       title: 'IRCTC Backend System',
       description: 'IRCTC-like backend supporting booking, cancellation, payment, and admin workflows with 20+ REST APIs, JWT authentication, optimized MySQL queries, and transaction management.',
       image: assetPath('assets/project-4.png'),
-      github: 'https://github.com/GiriGourav',
+      github: 'https://github.com/GiriGourav/IRCTC-Backend',
       tags: ['Java', 'Spring Boot', 'MySQL', 'REST APIs', 'JWT', 'Transactions']
     },
     {
       title: 'Smart Result Management System',
       description: 'Role-based result management system for 2000+ student records, automated result generation, responsive Thymeleaf UI, and MySQL-backed data retrieval.',
       image: assetPath('assets/project-3.png'),
-      github: 'https://github.com/GiriGourav',
+      github: 'https://github.com/GiriGourav/Smart-Result',
       tags: ['Java', 'Spring Boot', 'Thymeleaf', 'MySQL', 'RBAC']
     },
     {
